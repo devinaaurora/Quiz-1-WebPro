@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surabaya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/surabaya-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lilita+One&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    /* Hero Section Background */
+    .hero {
+      background: url('images/sby.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Card style */
+    .info-card {
+      background: #f1f5f2;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .info-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">Surabaya</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" data-menu>
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="profile.html">Profile</a>
+        <a data-nav href="hometown.html">Hometown</a>
+        <a data-nav href="food.html">Local Food</a>
+        <a data-nav href="tourist.html">Tourist Places</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content container" data-aos="fade-up">
+        <h1 class="hero-title">Welcome to Surabaya!</h1>
+        <p class="hero-subtitle">A city of heroes, rich history, and vibrant culture.</p>
+        <a class="btn btn-accent" href="#discover">Discover Surabaya</a>
+      </div>
+    </section>
+
+    <section class="section" id="discover">
+      <div class="container">
+        <header class="section-header" data-aos="fade-up">
+          <span class="section-kicker">Explore More</span>
+          <h2 class="section-title">About Surabaya</h2>
+          <p class="section-subtitle">Navigate through the city’s highlights, flavors, and stories.</p>
+        </header>
+        <div class="card-grid">
+  <article class="info-card" data-aos="zoom-in">
+    <img src="images/city.jpg" alt="Surabaya city skyline">
+    <div class="info-card-body">
+      <h3>Hometown</h3>
+      <p>Discover the history and unique vibe of This City.</p>
+      <a class="btn btn-accent" href="hometown.html">Explore</a>
+    </div>
+  </article>
+  <article class="info-card" data-aos="zoom-in" data-aos-delay="200">
+    <img src="images/food.jpg" alt="Surabaya traditional food">
+    <div class="info-card-body">
+      <h3>Local Food</h3>
+      <p>Savor the authentic flavors that define Surabaya.</p>
+      <a class="btn btn-accent" href="food.html">Explore</a>
+    </div>
+  </article>
+  <article class="info-card" data-aos="zoom-in" data-aos-delay="400">
+    <img src="images/tourist.jpg" alt="Surabaya landmark">
+    <div class="info-card-body">
+      <h3>Tourist Places</h3>
+      <p>Explore must-visit attractions and historic landmarks.</p>
+      <a class="btn btn-accent" href="tourist.html">Explore</a>
+    </div>
+  </article>
+</div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container profile-callout" data-aos="fade-up">
+        <div>
+          <h2 class="section-title go-to-profile">Get to Know Me!</h2>
+          <p class="section-subtitle">Meet the person behind these stories about Surabaya.</p>
+        </div>
+        <a class="btn btn-primary" href="profile.html">Go to Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p> </p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
